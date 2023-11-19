@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@600&family=Libre+Baskerville&family=Libre+Franklin:wght@300&family=Manrope:wght@400;500&family=Merriweather:wght@300&family=Parisienne&family=Raleway:ital,wght@1,300&family=Roboto:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+::-webkit-scrollbar{
+    height: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "header aside"
+    "main aside";
+}
+
+header{
+    background-color:rgba(0, 0, 0, 0.073);
+    grid-area: header;
+    position: relative;
+    top:30px;
+    left:50px;
+    width:950px;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 200px;
+    height: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.598);
+    border-radius: 10px;
+    position: absolute;
+    left:375px;
+    top: 100px;
+}
+
+#title{
+    font-size: 25pt;
+    position: relative;
+    top:-55px;
+    left:60px
+}
+
+aside{
+    grid-area: aside;
+    position: relative;
+    top:30px;
+    height: 95vh;
+    width: 550px;
+    background-color: #003841;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
+.photoBox{
+    position: relative;
+    left: 200px;
+}
+
+.photoBox img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+h3{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
+#phoneNumber::before{
+    content: '\260E';
+    color: white;
+    margin-right: 5px;
+}
+
+#emailAdres::before{
+    content:'\2709';
+    color: white;
+    margin-right: 5px;
+}
+
+#geolocation::before{
+    content: '\25BC';
+    color: white;
+    margin-right:5px;
+}
+
+.skillBox{
+    display: grid;
+    margin-top: 10px;
+}
+
+.skillBox span{
+    margin-bottom: 5px;
+}
+
+.metter{
+    width: 200px;
+    height: 5px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.235);
+}
+
+.progressBar{
+    display: block;
+    height: 5px;
+    border-radius: 100px ;
+    background-color: #105661;
+}
+
+.JS{
+    width: 150px;
+}
+
+.TS{
+    width: 20px;
+}
+
+.RR{
+    width: 75px;
+}
+
+.HTML,.CSS{
+    width: 175px;
+}
+
+.languagesBox,.educationBox,.skillsBox,.contactsBox{
+    position: relative;
+    left:95px
+}
+
+main{
+    position: relative;
+    left:50px;
+    grid-area: main;
+    width: 950px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experienceBox{
+    display: grid;
+    row-gap: 10px;
+}
+
+.experience{
+    display: grid;
+    row-gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #105661;
+    transition: all 0.5s ease;
+}
+
+a:hover{
+    color:gold
+}
